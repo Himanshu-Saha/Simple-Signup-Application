@@ -10,6 +10,7 @@ function Template({text, changeState,isConfirmPassword}) {
   const contact = useRef('default');
   const [passwordAlert, setPasswordAlert] = useState(false);
   const [focus, setFocus] = useState(false);
+  const [emptyText, setEmptyText] = useState(false);
   const [err, setErr] = useState(false);
   function check(input) {
     let regex;
@@ -19,10 +20,7 @@ function Template({text, changeState,isConfirmPassword}) {
         regex = /^[A-Za-z]+$/;
         break;
       case 'Email ID':
-        regex = /^[(\w\d\W)+]+@[\w+]+(\.[\w+]{2,})+$/i;
-        break;
-      case 'Phone Number':
-        regex = /^[(0-9)]{10}$/;
+        regex = /^[(\w\d\.\/\_)+]+@[\w+]+(\.[\w+]{2,})+$/i;
         break;
       case 'Password':
       case 'Confirm Password':
@@ -40,10 +38,14 @@ function Template({text, changeState,isConfirmPassword}) {
       else
       setPasswordAlert(true)
     }
-    if ((ok || input=='') &&input.length<20) {
+    if ((ok || input=='') &&input.length<30) {
+      if(input=='')setEmptyText(true);
+      if(input!='')setEmptyText(false);
+      
       changeState(input);
       setErr(false);
     } else {
+      setEmptyText(false);
       setErr(true);
     }
   }
@@ -66,8 +68,8 @@ function Template({text, changeState,isConfirmPassword}) {
         
         <View>
           {DOB.current ? (
-            <DatePicker changeState={changeState} theme={'dark'}></DatePicker>
-          ) : (number.current?(<App changeState={changeState}/>):(
+            <View style={styles.textInput}><DatePicker changeState={changeState} theme={'dark'}></DatePicker></View>  
+          ) : (number.current?(<App changeState={changeState} setErr={setErr}/>):(
             <TextInput
               style={styles.textInput}
               onChangeText={check}
@@ -93,11 +95,15 @@ function Template({text, changeState,isConfirmPassword}) {
 
         {err && text !== 'Date of Birth' && text !== 'Confirm Password' &&(
           <View>
-            <Text style={styles.errText}>*Invalid</Text>
+            <Text style={styles.errText}>*Invalid {text}</Text>
           </View>
         )}
         {
-          passwordAlert && <Text>doesn't </Text>
+          passwordAlert && <Text style={styles.errText}>*Password doesn't match</Text>
+        }
+
+        {
+          emptyText && <Text style={styles.errText}>*Fill {text}</Text>
         }
       </View>
     </>
@@ -121,6 +127,8 @@ let styles = StyleSheet.create({
     borderColor: 'grey',
     borderRadius: 20,
     padding: 10,
+    textAlign:"left",
+    
   },
   errText: {
     color: 'red',

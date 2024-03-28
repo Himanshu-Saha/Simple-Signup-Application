@@ -13,6 +13,8 @@ import Template from './src/DataTemplate';
 import UserImage from './src/Image';
 export default App;
 
+
+
 function App() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setlastName] = useState('');

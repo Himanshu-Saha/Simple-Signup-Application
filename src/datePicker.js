@@ -17,13 +17,14 @@ export default ({ changeState, children }) => {
     <>
       {/* {children} */}
       <TextInput
-        style={{color:"white",textAlign:"center"}}
+        style={{color:"white"}}
         label=" Date of Birth"
         value={formatDate(date)} 
         onPressIn={() => setOpen(true)}
       />
       <DatePicker
         modal
+        maximumDate={new Date}
         mode='date'
         open={open}
         date={date}
