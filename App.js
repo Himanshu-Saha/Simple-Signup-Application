@@ -11,8 +11,8 @@ import {
 } from 'react-native';
 import Template from './src/DataTemplate';
 import UserImage from './src/Image';
+import { SignUpData } from './src/utils/data';
 export default App;
-
 
 
 function App() {
@@ -55,13 +55,13 @@ function App() {
           <UserImage />
         </View>
         <View style={styles.data}>
-          <Template text="First Name" changeState={setFirstName} />
-          <Template text="Last Name" changeState={setlastName} />
-          <Template text="Email ID" changeState={setemail} />
-          <Template text="Phone Number" changeState={setphoneNumber} />
-          <Template text="Date of Birth" changeState={setdateOfBirth} />
-          <Template text="Password" changeState={setPassword} />
-          <Template text="Confirm Password" changeState={setConfirmPassword} isConfirmPassword={password} />
+          <Template text={SignUpData.FirstName} changeState={setFirstName} />
+          <Template text={SignUpData.LastName} changeState={setlastName} />
+          <Template text={SignUpData.Email} changeState={setemail} />
+          <Template text={SignUpData.PhoneNumber} changeState={setphoneNumber} />
+          <Template text={SignUpData.DateOfBirth} changeState={setdateOfBirth} />
+          <Template text={SignUpData.Password} changeState={setPassword} />
+          <Template text={SignUpData.ConfirmPassword} changeState={setConfirmPassword} isConfirmPassword={password} />
         </View>
         <View>
           <TouchableOpacity style={styles.button} onPress={showData}>

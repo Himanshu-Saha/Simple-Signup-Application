@@ -18,7 +18,7 @@ export default ({ changeState, children }) => {
       {/* {children} */}
       <TextInput
         style={{color:"white"}}
-        label=" Date of Birth"
+        label="Date of Birth"
         value={formatDate(date)} 
         onPressIn={() => setOpen(true)}
       />

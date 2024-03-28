@@ -2,6 +2,8 @@ import React, {useRef, useState} from 'react';
 import {Button, StyleSheet, Text, TextInput, View} from 'react-native';
 import DatePicker from './datePicker';
 import App from './PhoneNumber';
+import { SignUpData } from './utils/data';
+
 
 function Template({text, changeState,isConfirmPassword}) {
   const DOB = useRef(false);
@@ -15,15 +17,15 @@ function Template({text, changeState,isConfirmPassword}) {
   function check(input) {
     let regex;
     switch (text) {
-      case 'First Name':
-      case 'Last Name':
+      case SignUpData.FirstName:
+      case SignUpData.LastName:
         regex = /^[A-Za-z]+$/;
         break;
-      case 'Email ID':
+      case SignUpData.Email:
         regex = /^[(\w\d\.\/\_)+]+@[\w+]+(\.[\w+]{2,})+$/i;
         break;
-      case 'Password':
-      case 'Confirm Password':
+      case SignUpData.Password:
+      case SignUpData.ConfirmPassword:
         regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[\W]).{8,}$/;
         break;
       default:
@@ -31,7 +33,7 @@ function Template({text, changeState,isConfirmPassword}) {
         break;
     }
     ok = regex.test(input);
-    if(text=='Confirm Password'){
+    if(text==SignUpData.ConfirmPassword){
       if(isConfirmPassword===input){
         setPasswordAlert(false)
       }
@@ -51,12 +53,12 @@ function Template({text, changeState,isConfirmPassword}) {
   }
 
   function changeFocus() {
-    if (text === 'Password') setFocus(true);
+    if (text === SignUpData.Password) setFocus(!focus);
   }
 
-  if (text === 'Phone Number') {contact.current = 'number-pad';number.current = true;}
-  else if (text === 'Date of Birth') DOB.current = true;
-  else if (text === 'Password' || text === 'Confirm Password')
+  if (text === SignUpData.PhoneNumber) {contact.current = 'number-pad';number.current = true;}
+  else if (text === SignUpData.DateOfBirth) DOB.current = true;
+  else if (text === SignUpData.Password || text === SignUpData.ConfirmPassword)
     security.current = true;
 
   return (
@@ -76,6 +78,7 @@ function Template({text, changeState,isConfirmPassword}) {
               placeholder={text}
               color="white"
               onFocus={changeFocus}
+              onBlur={changeFocus}
               placeholderTextColor="grey"
               secureTextEntry={security.current}
               keyboardType={contact.current}
@@ -93,7 +96,7 @@ function Template({text, changeState,isConfirmPassword}) {
           </Text>
         )}
 
-        {err && text !== 'Date of Birth' && text !== 'Confirm Password' &&(
+        {err && text !== SignUpData.DateOfBirth && text !== SignUpData.ConfirmPassword &&(
           <View>
             <Text style={styles.errText}>*Invalid {text}</Text>
           </View>
