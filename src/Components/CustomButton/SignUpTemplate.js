@@ -1,11 +1,11 @@
 import React, {useRef, useState} from 'react';
 import {Button, StyleSheet, Text, TextInput, View} from 'react-native';
-import DatePicker from './datePicker';
-import App from './PhoneNumber';
-import { SignUpData } from './utils/data';
+import Date from './datePicker';
+import Number from './PhoneNumber';
+import { SignUpData } from '../../utils/data';
 
 
-function Template({text, changeState,isConfirmPassword}) {
+function SignUpTemplate({text, changeState,isConfirmPassword}) {
   const DOB = useRef(false);
   const number = useRef(false);
   const security = useRef(false);
@@ -70,8 +70,8 @@ function Template({text, changeState,isConfirmPassword}) {
         
         <View>
           {DOB.current ? (
-            <View style={styles.textInput}><DatePicker changeState={changeState} theme={'dark'}></DatePicker></View>  
-          ) : (number.current?(<App changeState={changeState} setErr={setErr}/>):(
+            <View style={styles.textInput}><Date changeState={changeState} theme={'dark'}></Date></View>  
+          ) : (number.current?(<Number changeState={changeState} setErr={setErr}/>):(
             <TextInput
               style={styles.textInput}
               onChangeText={check}
@@ -113,7 +113,7 @@ function Template({text, changeState,isConfirmPassword}) {
   );
 }
 
-export default Template;
+export default SignUpTemplate;
 
 let styles = StyleSheet.create({
   container: {
