@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { launchImageLibrary } from "react-native-image-picker";
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function UserImage() {
   const [photo, setPhoto] = useState(null);
@@ -29,9 +30,13 @@ export default function UserImage() {
     <>
       <View style={styles.container}>
         <Image source={{ uri: photo }} style={styles.image} />
-        <TouchableOpacity onPress={handleImagePicker}>
-          <Text style={styles.updateText}>Update Image</Text>
-        </TouchableOpacity>
+        <Icon.Button
+  name="camera"
+  size={28}
+  color="white"
+  backgroundColor="transparent"
+  onPress={handleImagePicker}
+/>
         <Text style={styles.text}>Create Your Account</Text>
       </View>
     </>

@@ -49,7 +49,7 @@ function SignUpPage() {
   }}}
 
   return (
-    <SafeAreaView style={styles.container}>
+    
       <ScrollView>
         <View>
           <UserImage />
@@ -69,15 +69,11 @@ function SignUpPage() {
           </TouchableOpacity>
         </View>
       </ScrollView>
-    </SafeAreaView>
   );
 }
 
 let styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#323139',
-    flex: 1,
-  },
+  
   data: {
     marginLeft: 50,
     marginRight: 50,

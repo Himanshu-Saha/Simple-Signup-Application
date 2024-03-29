@@ -1,0 +1,252 @@
+{
+    "results": [
+        {
+            "name": {
+                "title": "Ms",
+                "first": "Hilla",
+                "last": "Waisanen"
+            },
+            "email": "hilla.waisanen@example.com",
+            "phone": "06-303-523",
+            "id": {
+                "name": "HETU",
+                "value": "NaNNA376undefined"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/31.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/31.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/31.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": {
+                "title": "Mrs",
+                "first": "Amy",
+                "last": "Lavigne"
+            },
+            "location": {
+                "street": {
+                    "number": 2010,
+                    "name": "Pine Rd"
+                },
+                "city": "Jasper",
+                "state": "Québec",
+                "country": "Canada",
+                "postcode": "T9B 1C9",
+                "coordinates": {
+                    "latitude": "70.1241",
+                    "longitude": "75.4671"
+                },
+                "timezone": {
+                    "offset": "-5:00",
+                    "description": "Eastern Time (US & Canada), Bogota, Lima"
+                }
+            },
+            "email": "amy.lavigne@example.com",
+            "login": {
+                "uuid": "d577d34b-92a1-4893-bc7d-c6fb8b4760fd",
+                "username": "yellowswan378",
+                "password": "0911",
+                "salt": "x9RIRrDz",
+                "md5": "d9f48479756b4de3eda9d9e55c3187d5",
+                "sha1": "c1e5c94a71366ad47fa597929abbd96c9b4ab614",
+                "sha256": "829a02babc8a928fd355a092241642da34afd03528de39520b7166beecbb730e"
+            },
+            "dob": {
+                "date": "1986-11-22T14:49:24.837Z",
+                "age": 37
+            },
+            "registered": {
+                "date": "2017-09-09T04:41:50.542Z",
+                "age": 6
+            },
+            "phone": "J09 D98-0968",
+            "cell": "G10 L43-7786",
+            "id": {
+                "name": "SIN",
+                "value": "765089644"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/11.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/11.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/11.jpg"
+            },
+            "nat": "CA"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Alex",
+                "last": "Petit"
+            },
+            "location": {
+                "street": {
+                    "number": 3942,
+                    "name": "Place des 44 Enfants D'Izieu"
+                },
+                "city": "Saint-Pierre",
+                "state": "Moselle",
+                "country": "France",
+                "postcode": 18109,
+                "coordinates": {
+                    "latitude": "-34.2510",
+                    "longitude": "87.9376"
+                },
+                "timezone": {
+                    "offset": "-6:00",
+                    "description": "Central Time (US & Canada), Mexico City"
+                }
+            },
+            "email": "alex.petit@example.com",
+            "login": {
+                "uuid": "c151f2ed-1fad-4421-b65c-cda569279a59",
+                "username": "goldendog659",
+                "password": "greece",
+                "salt": "73BlV6DF",
+                "md5": "a78a04ae020cedde95197dcd09dcff4a",
+                "sha1": "5e00c7074c5ec7a58789ee9799de084e34779967",
+                "sha256": "eab73f0536e742e8a74a8c638cd8b731a5f29e05069f711c73b82f76af094713"
+            },
+            "dob": {
+                "date": "1953-08-03T17:57:57.044Z",
+                "age": 70
+            },
+            "registered": {
+                "date": "2004-04-01T00:24:59.885Z",
+                "age": 19
+            },
+            "phone": "05-91-38-50-43",
+            "cell": "06-49-94-84-11",
+            "id": {
+                "name": "INSEE",
+                "value": "1530759920810 54"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/28.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/28.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/28.jpg"
+            },
+            "nat": "FR"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Xénon",
+                "last": "Rocha"
+            },
+            "location": {
+                "street": {
+                    "number": 6088,
+                    "name": "Rua Sete de Setembro "
+                },
+                "city": "Limeira",
+                "state": "Mato Grosso do Sul",
+                "country": "Brazil",
+                "postcode": 69275,
+                "coordinates": {
+                    "latitude": "-89.2959",
+                    "longitude": "-100.3412"
+                },
+                "timezone": {
+                    "offset": "+8:00",
+                    "description": "Beijing, Perth, Singapore, Hong Kong"
+                }
+            },
+            "email": "xenon.rocha@example.com",
+            "login": {
+                "uuid": "4a560e56-a634-4d79-8fc2-966e56ba7cda",
+                "username": "happyfish844",
+                "password": "claudio",
+                "salt": "W9qzeaTJ",
+                "md5": "146c48caef3bef41f0ecd0c367f66bae",
+                "sha1": "453332ab9be2888622d16355e6ef001cb3e01e6b",
+                "sha256": "5d073e978aaa20ab5bea08295f427da64ba1c15078edd5d545a377fb57e5d15b"
+            },
+            "dob": {
+                "date": "1972-10-14T02:33:21.863Z",
+                "age": 51
+            },
+            "registered": {
+                "date": "2007-08-25T03:30:46.018Z",
+                "age": 16
+            },
+            "phone": "(78) 7063-3688",
+            "cell": "(03) 2134-0116",
+            "id": {
+                "name": "CPF",
+                "value": "148.565.283-39"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/85.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/85.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/85.jpg"
+            },
+            "nat": "BR"
+        },
+        {
+            "gender": "male",
+            "name": {
+                "title": "Mr",
+                "first": "Rasmus",
+                "last": "Rasmussen"
+            },
+            "location": {
+                "street": {
+                    "number": 1053,
+                    "name": "Voldgade"
+                },
+                "city": "Branderup J",
+                "state": "Hovedstaden",
+                "country": "Denmark",
+                "postcode": 74527,
+                "coordinates": {
+                    "latitude": "35.0626",
+                    "longitude": "-39.9556"
+                },
+                "timezone": {
+                    "offset": "-4:00",
+                    "description": "Atlantic Time (Canada), Caracas, La Paz"
+                }
+            },
+            "email": "rasmus.rasmussen@example.com",
+            "login": {
+                "uuid": "35aeb19b-48b0-49e6-bf5e-5a2a2798a391",
+                "username": "blackpanda300",
+                "password": "maryann",
+                "salt": "zNdH1BxW",
+                "md5": "b6ed65163eea021c0588c9634e56357b",
+                "sha1": "2ae677ad69f47b1d9d9306496b068efd26e1baa6",
+                "sha256": "108694b0e9cfb75ccbe31afdc5fc76ce5a29c469613851883d1bef50345315fb"
+            },
+            "dob": {
+                "date": "1999-02-13T17:54:59.189Z",
+                "age": 25
+            },
+            "registered": {
+                "date": "2007-10-19T19:31:10.396Z",
+                "age": 16
+            },
+            "phone": "74775079",
+            "cell": "90308712",
+            "id": {
+                "name": "CPR",
+                "value": "130299-5539"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/men/1.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+            },
+            "nat": "DK"
+        }
+    ],
+    "info": {
+        "seed": "1b9431d19fc7d8cb",
+        "results": 5,
+        "page": 1,
+        "version": "1.4"
+    }
+}
