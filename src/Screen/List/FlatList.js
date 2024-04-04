@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, Platform, StyleSheet, Text, View } from "react-native";
 import ListTemplate from "./listTemplate";
 
 export default function ListData() {
@@ -13,7 +13,7 @@ export default function ListData() {
   async function fetchData() {
     setLoading(true);
     try {
-      let res = await fetch('https://randomuser.me/api/?results=10')
+      let res = await fetch('https://randomuser.me/api/?results=50')
       if (!res.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -48,6 +48,7 @@ export default function ListData() {
     <>
       <View>
             <View>
+              
                 <Text style={styles.header}>
                     {/* Data */}
                 </Text>

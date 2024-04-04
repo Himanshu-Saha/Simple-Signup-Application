@@ -50,7 +50,7 @@ function SignUpPage() {
 
   return (
     
-      <ScrollView>
+      <ScrollView style={styles.container}>
         <View>
           <UserImage />
         </View>
@@ -92,5 +92,8 @@ let styles = StyleSheet.create({
     borderRadius: 50,
     marginBottom: 10,
     marginHorizontal:60
+  },
+  container:{
+    // marginBottom:10
   }
 });

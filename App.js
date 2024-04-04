@@ -20,10 +20,10 @@ function App() {
   return (
    <>
    <SafeAreaView style={styles.container}>
-{/* <SignUpPage /> */}
-    <FlatList>
+<SignUpPage />
+  {/* <FlatList>  */}
 
-    </FlatList>
+     {/* </FlatList> */}
   
 
    </SafeAreaView>
@@ -33,9 +33,10 @@ function App() {
 
 const styles=StyleSheet.create({
   container: {
-    backgroundColor: 'lightgrey',
-    // backgroundColor: '#323139',
+    // backgroundColor: 'lightgrey',
+    backgroundColor: '#323139',
     flex: 1,
+
   },
 })
 

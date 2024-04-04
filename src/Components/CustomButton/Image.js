@@ -30,7 +30,7 @@ export default function UserImage() {
     <>
       <View style={styles.container}>
         <Image source={{ uri: photo }} style={styles.image} />
-        <Icon.Button
+        <Icon
   name="camera"
   size={28}
   color="white"
